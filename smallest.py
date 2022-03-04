@@ -1,15 +1,15 @@
 print("Enter any sentence: ")
 text = input()
 text = text.split()
-smallWordLen = 0
+smallestword = 0
 
-for wrd in text:
-  wrdLen = len(wrd)
-  if wrdLen < smallWordLen:
-    smallWordLen = wrdLen
+for word in text:
+  wordLen = len(word)
+  if wordLen < smallestword:
+    smallestword = wordLen
 
 print("Smallest Word: ")
-for wrd in text:
-  wrdLen = len(wrd)
-  if wrdLen == smallWordLen:
-    print(wrd)
+for word in text:
+  wordLen = len(word)
+  if wordLen == smallestword:
+    print(word)

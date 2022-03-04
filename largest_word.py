@@ -3,13 +3,13 @@ text = input()
 text = text.split()
 bigWordLen = 0
 
-for wrd in text:
-  wrdLen = len(wrd)
-  if wrdLen > bigWordLen:
-    bigWordLen = wrdLen
+for word in text:
+  wordlen = len(word)
+  if wordlen > biggestword:
+    biggestword = wordlen
 
 print("Largest Word: ")
-for wrd in text:
-  wrdLen = len(wrd)
-  if wrdLen == bigWordLen:
-    print(wrd)
+for word in text:
+  wordlen = len(word)
+  if wordlen == biggestword:
+    print(word)
