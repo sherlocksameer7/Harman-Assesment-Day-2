@@ -8,7 +8,7 @@ for word in text:
   if wordLen < smallestword:
     smallestword = wordLen
 
-print("Smallest Word: ")
+print("The Smallest Word is: ")
 for word in text:
   wordLen = len(word)
   if wordLen == smallestword:

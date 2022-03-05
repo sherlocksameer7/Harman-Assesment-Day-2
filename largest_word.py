@@ -1,15 +1,6 @@
 print("Enter any sentence: ")
 text = input()
-text = text.split()
-bigWordLen = 0
-
-for word in text:
-  wordlen = len(word)
-  if wordlen > biggestword:
-    biggestword = wordlen
-
-print("Largest Word: ")
-for word in text:
-  wordlen = len(word)
-  if wordlen == biggestword:
-    print(word)
+text_list = list(text.split(" "))
+print(text_list)
+sort_list = sorted(text_list, key=len)
+print(sort_list[-1])
